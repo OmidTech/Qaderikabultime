@@ -119,7 +119,7 @@
             placeholder="Bill No" value="QKTBN 00<%=(bb && bb.bill) ? (bb.bill + 1) : 1%>" required step="0.01">
         </div>
         <div class="row">
-        <div class="col-lg-4 col-sm-12 mb-3">
+        <div class="col-lg-4 mb-3">
           <label class="form-label" for="basic-default-fullname">Select Customer</label>
 
           <select  id="scn" name="scn" class="form-select" required>
@@ -131,7 +131,7 @@
               <%})%>
           </select>
         </div>
-        <div class="mb-3 col-lg-4 col-sm-12">
+        <div class="mb-3 col-lg-4">
           <label class="form-label" for="basic-default-sun">Select Currency</label>
           <select id="sc" name="sc" class="sc form-select" required>
             <option value="" disabled >Currency</option>
@@ -143,7 +143,7 @@
       </div>
         <div  class="data row mb-3">
 
-          <div class="col col-sm-12">
+          <div class="col">
             <select onclick="price()" id="sit" name="sit" class="form-select" required>
               <option value="" disabled selected>Select Item</option>
               <% iit.forEach(function(c){%>
@@ -153,27 +153,27 @@
                 <%})%>
             </select>
           </div>
-          <div id="pricet" class="col col-sm-12">
+          <div id="pricet" class="col">
             <input id="sunit"  name="sunit" type="text" class="sunit form-control" readonly placeholder="Unit" required
               step="0.01">
           </div>
-          <div id="pricet" class="col col-sm-12">
+          <div id="pricet" class="col">
             <input id="pprice" name="pprice" type="number" class="pprice form-control" placeholder="Price per Unit"
               required step="0.01">
           </div>
-          <div class="col col-sm-12">
+          <div class="col">
             <input id="qquan" name="qquan" type="number" class="qquan form-control" placeholder="Quantity" required
               min="1">
           </div>
-          <div class="col col-sm-12">
+          <div class="col">
             <input id="tt" name="tt" type="number" class="total form-control" placeholder="Total" readonly min="1">
           </div>
-          <div class="col-auto col-sm-12">
+          <div class="col-auto">
             <button type="button" style="color: red;" class="btn removeRow"><i class="ti ti-xbox-x fs-6"></i></button>
           </div>
         </div>
 
-        <button type="button" id="addRow" class="btn mb-3 col-sm-12 col-lg-12 float-end btn-primary">Add Another Row</button>
+        <button type="button" id="addRow" class="btn mb-3 col-lg-12 float-end btn-primary">Add Another Row</button>
     </div>
 
     <div class=" mb-3 mt-4 mx-3 float-end">
